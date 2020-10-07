@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google services feedback</title>
+</head>
+<body>
+	<div align="center">
+		<header><h1>Google services feedback</h1></header>
+		<div>
+			<form action="#" autocomplete="on" method="get">
+				<section style="display: block;">
+					<h3>Give feedback as:</h3>
+					<input type="radio" id="yes" name="feedback">
+					<label for="yes">Anonymous</label><br/>
+					<input type="radio" id="no" name="feedback">
+					<label for="no">Normal User</label>
+				</section>
+				<section>
+					<h3>Details</h3>
+					<div align="center">
+						<label for="email">Email</label>
+						<input type="text" name="email" placeholder="Ex:example@example.com"><br/>
+					</div>
+					<div align="center">
+						<label for="img">Select Your photo:</label>
+						<input id="img" type="file" name="img" accept="image/*">
+					</div>
+					<div align="center">
+						<label for="pdf">Select Bug report:</label>
+						<input id="pdf" type="file" name="pdf" accept="application/pdf/*">
+					</div>
+					<div align="center">
+						<label for="comment">Enter feedback</label>
+						<textarea maxlength="200" id="comment" rows="5" cols="15" placeholder="Enter your comments.."></textarea>
+					</div>
+					<input id="getCopy" type="checkbox" name="getCopy">
+					<label for="getCopy">Send me copy of my feedback form</label>
+					<br/><br/>
+					<button formmethod="get" type="submit" onclick="alert('Your form submited successfully')" formaction="./IPL_Blog.html">Submit</button>
+					<input type="reset"><br/>
+					<input width="30" height="30" type="image" name="image" src="https://static.thenounproject.com/png/11587-200.png">
+				</section>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
