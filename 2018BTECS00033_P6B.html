@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PHD Registration form</title>
+  </head>
+  <body style="margin: 0">
+    <header style="border-bottom: solid 3px">
+      <h1 style="text-align: center">PHD EXAM Registration 2021</h1>
+    </header>
+    <div style="margin-right: 200px; margin-left: 200px">
+      <form action="#" autocomplete="true">
+        <fieldset
+          style="padding: 20px; align-content: space-around; margin: 10px"
+        >
+          <legend>Student Information</legend>
+          <label for="fname">First Name:</label>
+          <input required="true" id="fname" type="text" name="fname" />
+          <label for="mname">Middle Name:</label>
+          <input required="true" id="mname" type="text" name="mname" />
+          <label for="lname">Last Name:</label>
+          <input required="true" id="lname" type="text" name="lname" />
+          <br />
+          <br />
+          <label for="pname">Parent's Full Name:</label>
+          <input required="true" id="pname" type="text" name="pname" />
+          <br />
+          <br />
+          <label for="email">Current working email address:</label>
+          <input required="true" id="email" type="email" name="email" />
+          <br />
+          <br />
+          <label for="number">Mobile Number</label>
+          <input required="true" id="number" type="text" name="number" />
+          <br />
+          <br />
+          <label for="proofs">Select ID proof type</label>
+          <select required="true" id="proofs" name="proofs">
+            <option value="Aadhar">Aadhar ID</option>
+            <option value="PAN ID">Pan ID</option>
+            <option value="Voter ID" selected="true">Voter ID</option>
+          </select>
+          <br />
+          <br />
+          <label for="address">Address</label>
+          <br />
+          <textarea
+            required="true"
+            id="address"
+            name="address"
+            rows="3"
+            cols="30"
+          ></textarea>
+        </fieldset>
+        <fieldset
+          style="padding: 20px; align-content: space-around; margin: 10px"
+        >
+          <legend>Educational Information</legend>
+          <label for="qualification">Educational Qualification</label>
+          <select required="true" id="qualification" name="qualification">
+            <option value="B.Tech">M.Tech</option>
+            <option selected="true" value="M.Pharma">M.Pharma</option>
+            <option value="M.C.A">M.C.A</option>
+          </select>
+          <label for="branch">Select Branch:</label>
+          <select required="true" id="branch" name="branch">
+            <option value="Computer Science">Computer Science</option>
+            <option selected="true" value="Electrical Engineering">
+              Electrical Engineering
+            </option>
+            <option value="Electronics Engineering">
+              Electronics Engineering
+            </option>
+          </select>
+          <br />
+          <br />
+          <label for="colleges">Enter College</label>
+          <input required="true" list="colleges" />
+          <datalist id="colleges">
+            <option value="Walchand college of engineering">
+              Walchand college of engineering
+            </option>
+            <option value="Willingdone college">Willingdone college</option>
+          </datalist>
+          <br />
+          <br />
+          <label for="University">University Name</label>
+          <input required="true" list="University" />
+          <datalist id="University">
+            <option value="Shivaji University Kolhapur">
+              Shivaji University Kolhapur
+            </option>
+            <option value="Savitribai Phule University">
+              Savitribai Phule University
+            </option>
+          </datalist>
+          <br />
+          <br />
+          <label for="seatno">Exam Seat Number</label>
+          <input required="true" id="seatno" type="text" name="seatno" />
+        </fieldset>
+        <fieldset
+          style="padding: 20px; align-content: space-around; margin: 10px"
+        >
+          <legend>Exam Preference</legend>
+          <label for="paper">Ph.D Exam paper branch: </label>
+          <select required="true" id="paper" name="paper">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Mechanical">Mechanical</option>
+          </select>
+          <br />
+          <br />
+          <label for="city">Choose city:</label>
+          <select required="true" name="city" id="city">
+            <optgroup label="Maharashtra">
+              <option value="Sangli">Sangli</option>
+              <option value="Satara">Satara</option>
+              <option value="Kolhapur">Kolhapur</option>
+            </optgroup>
+          </select>
+        </fieldset>
+        <div
+          style="
+            padding: 20px;
+            align-self: center;
+            width: 50%;
+            display: inline-block;
+          "
+        >
+          <button type="reset">Reset Form</button>
+        </div>
+        <div style="padding: 20px; float: right">
+          <button onclick="alert('Your form submited')" type="button">
+            Submit Form
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
