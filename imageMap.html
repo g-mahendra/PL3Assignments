@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>ImageMap</title>
+    <style>
+        .link{
+            margin: 5px;
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body style="margin: 30px; border: solid 1px; padding: 20px">
+    <header>
+      <h1>MG's Team Image Map</h1>
+      <nav>
+        <a class="link" href="https://en.wikipedia.org/wiki/India_national_cricket_team"
+          >Male Cricket Team India
+        </a>
+        <a class="link" href="https://en.wikipedia.org/wiki/India_women%27s_national_cricket_team">
+            Female Cricket Team
+        </a>
+        <a class="link" href="https://en.wikipedia.org/wiki/India_men%27s_national_field_hockey_team">
+            Indian Hockey Team
+        </a>
+    </header>
+    <div>
+        <img src="./imagemap.png" alt="Three teams" usemap="#workmap"/>
+        <map name="workmap">
+            <area 
+              shape="rect" 
+              coords="200, 200, 400, 400" 
+              href="https://en.wikipedia.org/wiki/India_national_cricket_team" >
+            <area 
+              shape="circle" 
+              coords="200, 800, 60" 
+              href="https://en.wikipedia.org/wiki/India_women%27s_national_cricket_team">
+            <area 
+              shape="poly" 
+              coords="1000, 500, 900, 600, 1200, 600, 1000, 500" 
+              href="https://en.wikipedia.org/wiki/India_men%27s_national_field_hockey_team">
+        </map>
+    </div>
+    <hr/> 
+    <footer>
+      Author: Mahendra Gharge<br/>
+      Class: TYCSE<br/>
+      PRN: 2018BTECS00033<br/> 
+    </footer>
+  </body>
+</html>
