@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Code</title>
+	<link rel="stylesheet" href="./code.css"/>
+    <style>
+      #code {
+        display: block;
+        background-color: rgba(10, 10, 10, 0.8);
+        width: 50%;
+		color: #fff;
+		border: 2px solid;
+		border-color: #ff00ff;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="color: #3d00e0">
+      <h1>Code to find digits in an Integer</h1>
+      <hr />
+    </header>
+    <section>
+      <h2>
+        <i
+          >Problem Statement: Write a code in any programming language that
+          counts the digits in a number.</i
+        >
+      </h2>
+      <code id="code">
+        <pre>
+
+	#include < stdio.h >
+	int main() {
+	    long long n;
+	    int count = 0;
+	    printf("Enter an integer: ");
+	    scanf("%lld", &n);
+	 
+	    // iterate until n becomes 0
+	    // remove last digit from n in each iteration
+	    // increase count by 1 in each iteration
+	    while (n != 0) {
+	        n /= 10;     // n = n/10
+	        ++count;
+	    }
+
+	    printf("Number of digits: %d", count);
+	}
+			</pre
+        >
+      </code>
+    </section>
+    <section>
+      <h3 style="font-style: italic;">Sample Input</h3>
+      <kbd class="strip">Enter an integer: 6989 </kbd>
+    </section>
+    <section>
+      <h3>Sample Output</h3>
+      <samp class="strip">
+        <code>Number of digits: 4</code>
+      </samp>
+    </section>
+    <section>
+      <h3>Variables used in the program</h3>
+      <var class="strip"> count, n </var>
+    </section>
+    <section>
+      <h3>Time Complexity</h3>
+      <p class="strip">O(log<sub>10</sub>(n))</p>
+    </section>
+    <hr />
+    <footer>
+      <p style="display: inline-block">For Algorithm, Refer</p>
+      <a
+        href="https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/"
+        >This</a
+      >
+    </footer>
+  </body>
+</html>

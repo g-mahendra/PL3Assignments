@@ -1,0 +1,9 @@
+.strip {
+  display: block;
+  background-color: #111;
+  padding: 30px;
+  width: 50%;
+  color: #FFF;
+  font-size: x-large;
+  text-align: center;
+}
